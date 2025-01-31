@@ -40,7 +40,7 @@ Ensure you have Python installed on your system. You can download it from [pytho
    ```
 4. Run the application:
    ```bash
-   gunicorn -w 4 app:get_info --bind 0.0.0.0:8000
+   gunicorn -w 4 -k uvicorn.workers.UvicornWorker app:app
    ```
 5. The API will be accessible at:
    ```
