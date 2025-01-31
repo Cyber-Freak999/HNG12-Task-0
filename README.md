@@ -26,8 +26,8 @@ Ensure you have Python installed on your system. You can download it from [pytho
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/your-repo.git
-   cd your-repo
+   git clone https://github.com/Cyber-Freak999/HNG12-Task-0
+   cd HNG12-Task-0
    ```
 2. Create a virtual environment and activate it:
    ```bash

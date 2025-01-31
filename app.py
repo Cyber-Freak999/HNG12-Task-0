@@ -14,11 +14,13 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+tz = pytz.timezone("Africa/Lagos")
+
 
 @app.get("/")
-async def get_info():
+async def main():
     return {
         "email": "precious.eyoh999@gmail.com",
-        "current_datetime": datetime.now(pytz.UTC).isoformat(),
-        "github_url": "https://github.com/",
+        "current_datetime": datetime.now(tz).isoformat(),
+        "github_url": "https://github.com/Cyber-Freak999/HNG12-Task-0",
     }
